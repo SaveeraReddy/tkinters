@@ -1,0 +1,12 @@
+#image import in tkinter
+import tkinter as tk
+from PIL import Image,ImageTk
+def image():
+  root=tk.Tk()
+  root.title("dispaly image")
+  image=Image.open("path")
+  photo=ImageTk.photoImage(image)
+  l=tk.Label(root,image=photo)
+  l.pack()
+  root.mainloop()
+  image()
